@@ -10,7 +10,7 @@ The Blog Publisher plugin helps to publish obsidian notes to blog platform. You 
 
 ### Publish note
 1. settings default `access token`, `visibility`, ``blog name``, `platform`
-   ![settings.png](./src/images/settings.png)
+   <img src="./src/images/settings.png" width="50%" height="50%" />
 2. select the note that want to publish
 3. open command tab and enter `publish-post`
 4. set the tags and click submit button
