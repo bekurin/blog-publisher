@@ -11,12 +11,11 @@ class BlogPublisherSettingTab extends PluginSettingTab {
 
     display() {
         const {containerEl: settingContainerEl} = this
-        const defaultPlatformOptions = {"tistory": "tistory"}
+        const defaultPlatformOptions = {"tistory": "tistory", "medium": "medium"}
         settingContainerEl.empty()
-        settingContainerEl.createEl("h2", {text: "Blog Publisher"})
 
         new Setting(settingContainerEl)
-        .setName("Access Token")
+        .setName("Access token")
         .setDesc("enter the access token that used to publish the posts.")
         .addText((text) => {
             text.setPlaceholder("Enter your access token")
@@ -28,7 +27,7 @@ class BlogPublisherSettingTab extends PluginSettingTab {
         })
 
         new Setting(settingContainerEl)
-        .setName("Blog Name")
+        .setName("Blog name")
         .setDesc("enter the blog name that you want to publish.")
         .addText((text) => {
             text.setPlaceholder("Enter your blog name")
@@ -40,7 +39,7 @@ class BlogPublisherSettingTab extends PluginSettingTab {
         })
 
         new Setting(settingContainerEl)
-        .setName("Post Visibility")
+        .setName("Post visibility")
         .setDesc("enter the visibilty of the post. (0: Private - Default, 1: Protection, 3: Issue)")
         .addText((text) => {
             text.setPlaceholder("Enter your visibility")
