@@ -1,9 +1,9 @@
 {
-	"id": "blog-publisher",
-	"name": "Blog Publisher",
+	"id": "tistory-publisher",
+	"name": "Tistory Publisher",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Easily publish a note in obsidian to blog",
+	"description": "Easily publish a note in obsidian to tistory",
 	"author": "bekurin",
 	"authorUrl": "https://github.com/bekurin",
 	"isDesktopOnly": false
