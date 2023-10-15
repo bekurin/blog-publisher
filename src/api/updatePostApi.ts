@@ -1,3 +1,4 @@
+import { requestUrl } from "obsidian"
 import ENV from "src/env"
 
 interface ModifyPostQueryParams {
@@ -15,10 +16,8 @@ const modifyPostApi = async (modifyPostQueryParams: ModifyPostQueryParams) => {
         encodeURIComponent(modifyPostQueryParams.content)
     }&postId=${modifyPostQueryParams.postId}`
     const url = `${ENV.TISTORY_URL}/post/modify?${queryParams}`
-    
-    return await fetch(url, {
-        method: "POST"
-    })
+
+    return await requestUrl({url: url, method: "POST"})
     .then((response) => {
         return response
     })

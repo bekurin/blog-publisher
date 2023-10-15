@@ -1,3 +1,4 @@
+import { requestUrl } from "obsidian";
 import ENV from "src/env";
 
 interface CreatePostQueryParams {
@@ -15,9 +16,7 @@ const createPostApi = async (createPostQueryParams: CreatePostQueryParams) => {
     }`
     const url = `${ENV.TISTORY_URL}/post/write?${queryParams}`
 
-    return await fetch(url, {
-        method: "POST"
-    })
+    return await requestUrl({url: url, method: "POST"})
     .then((response) => {
         return response
     })
